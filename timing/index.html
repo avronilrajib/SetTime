@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time</title>
+    <style type="text/css">
+        .box{
+            width: 400px;
+            height: 400px;
+            background: black;
+            color: white;
+            margin: auto;
+            text-align: center;
+            line-height: 400px;
+            font-size: 40px;
+            border-radius: 50%;
+            box-shadow: 0px 5px 30px black;
+        }
+        #rajib{
+            font-weight: bold;
+            color: floralwhite;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="box">
+        <p id="rajib"></p>
+    </div>
+
+
+
+<script>
+let myVar = setInterval(myTimer ,1000);
+function myTimer() {
+  const d = new Date();
+  document.getElementById("rajib").innerHTML = d.toLocaleTimeString();
+}
+</script>
+</body>
+</html>
